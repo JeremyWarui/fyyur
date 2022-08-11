@@ -526,7 +526,7 @@ def edit_venue_submission(venue_id):
             venue.genres = ",".join(form.genres.data),  # convert to list
             venue.facebook_link = form.facebook_link.data,
             venue.image_link = form.image_link.data,
-            venue.seeking_talent = True if form.seeking_venue.data else False
+            venue.seeking_talent = True if form.seeking_talent.data else False
             venue.seeking_description = form.seeking_description.data,
             venue.website = form.website_link.data
 
